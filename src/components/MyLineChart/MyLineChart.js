@@ -51,7 +51,7 @@ const MyLineChart = () => {
         
     <div className="flex">
        <div>
-       <h2 className='text-3xl font-bold mb-6'>This is Line Chart</h2>
+       <h2 className='text-3xl font-bold mb-6 text-blue-800' >This is Line Chart</h2>
          <LineChart width={700} height={400} data={data}>
         <Line dataKey={'price'} stroke="#0000ff"></Line>
         <Line dataKey={'sales'} stroke="#ff0000"></Line>
@@ -62,7 +62,7 @@ const MyLineChart = () => {
        </div>
 
        <div>
-       <h2 className='text-3xl font-bold mb-6'>This is PieChart</h2>
+       <h2 className='text-3xl font-bold mb-6 text-pink-600'>This is PieChart</h2>
        <PieChart width={700} height={250} >
         <Pie data= {data} dataKey={'price'} stroke="#ffa500" fill="#ff49d2" label></Pie>
         <Tooltip></Tooltip>
